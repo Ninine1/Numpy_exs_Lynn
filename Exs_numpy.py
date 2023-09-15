@@ -70,7 +70,6 @@ A = A.astype(np.float32)
 
 #4
 A[-1, -1] = 3
-#A = A.ravel() # A VERIFIER !!
 print(A)
 
 #5
