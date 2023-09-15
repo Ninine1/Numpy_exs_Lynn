@@ -14,7 +14,7 @@ I = np.array(range(1,10)).reshape(3,3)
 J = np.eye(4)
 K = np.random.standard_normal()
 L = np.random.randint(1, 11, 20)
-m = L.reshape(4,5)
+M = L.reshape(4,5)
 N = np.random.randn(0, 1, 7)
 O = np.linspace(0, 1, 5)
 
@@ -24,25 +24,35 @@ O = np.linspace(0, 1, 5)
 
 a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
+#1
 print(a.shape)
+#2
 print(a.shape)
+#3
 print(a.size)
+#4
 print(a.dtype)
 
 #EX 3
 
 a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
+#1
 print(a[1,1])
+#2
 a[1][1] = 0
+#3
 print(a[:,-1])
 
+#4
 A = np.random.randint(0, 10, 12).reshape(4,3)
 print(A)
 
+#5
 B = np.any(A < 5)
 print(B)
 
+#6
 A = np.where(A < 5, 0, A)
 print(A)
 
